@@ -5,9 +5,7 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   text-underline-position: under;
-  min-height: 293px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 92px 50px 92px 50px;
 }
 
 .header__links-list {
@@ -29,7 +27,7 @@
   list-style-type: none;
 }
 
-.header__link_active:active {
+.header__link_active {
   text-decoration: none;
 }
 
@@ -55,6 +53,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  font-style: normal;
 }
 
 .header__address {
@@ -63,7 +62,7 @@
 
 .address__location {
   text-decoration: none;
-  font-style: normal;
+  
 }
 
 /*COVER*/
@@ -71,7 +70,7 @@
 .cover {
   position: relative;
   min-height: 757px;
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -82,6 +81,7 @@
 
 .overlay {
   position: absolute;
+  inset: 0;
   background-color: black;
   opacity: 0.6;
   width: 100%;
@@ -98,7 +98,6 @@
   text-transform: uppercase;
   letter-spacing: 0.3em;
   width: 1000px;
-  height: 385px;
   margin: 164px 50px auto 50px;
 }
 
@@ -146,7 +145,7 @@
   height: 51px;
   background-color: transparent;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid currentColor;
   font-family: Raleway;
   font-weight: 500;
   font-size: 22px;
@@ -174,6 +173,7 @@
 .lots__card-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 30px;
 }
@@ -218,15 +218,15 @@
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
@@ -241,7 +241,6 @@
   margin-left: 24px;
   margin-top: 154px;
   width: 1052px;
-  min-height: 595px;
 }
 
 .about__column {
@@ -269,7 +268,6 @@
 .about__info {
   margin-left: 25px;
   width: 690px;
-  min-height: 449px;
   margin-top: 101px;
   display: flex;
   flex-direction: column;
@@ -294,8 +292,7 @@
 
 .footer {
   width: 1100px;
-  min-height: 180px;
-  margin-top: 146px;
+  margin-top: 180px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
@@ -329,6 +326,6 @@
   height: 48px;
 }
 
-.footer__menu-link_active:active {
+.footer__menu-link_active {
   text-decoration: none;
 }
